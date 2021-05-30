@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ampedinv/public_html #Add /<sub_folder> if required
-    - /bin/cp -r /build/* $DEPLOYPATH
+    - /bin/cp -R build $DEPLOYPATH
