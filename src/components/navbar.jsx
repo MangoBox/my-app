@@ -2,8 +2,8 @@ import React from "react";
 import $ from "jquery";
 /*import * as ReactBootstrap from 'bootstrap';*/
 
-import logo1 from "../img/male1.png";
-import logo2 from "../img/male.png";
+import logo1 from "../img/portrait.png";
+import logo2 from "../img/portrait.png";
 
 class Navbar extends React.Component {
   constructor() {

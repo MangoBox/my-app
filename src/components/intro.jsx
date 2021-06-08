@@ -24,7 +24,7 @@ class Intro extends React.Component {
                       "Computer Repairs",
                       "Electronic Engineer"
                     ]}
-                    typeSpeed={80}
+                    typeSpeed={50}
                     backDelay={1100}
                     backSpeed={30}
                     loop
