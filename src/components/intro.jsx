@@ -1,6 +1,7 @@
 import React from "react";
 import "./stars.scss";
 import Typed from "react-typed";
+import logo from "../img/logo.svg";
 
 class Intro extends React.Component {
   render() {
@@ -14,15 +15,19 @@ class Intro extends React.Component {
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">
-              <h1 className="intro-title mb-4">Liam Davies</h1>
+              <img src={logo}></img><br></br>
+              {/* <h4 className="intro-title mb-4">Liam Davies</h4> */}
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
                     strings={[
-                      "Inventor",
+                      "Electronic Engineer",
                       "Computer Repairs",
-                      "Electronic Engineer"
+                      "Entrepreneur",
+                      "Custom Gaming PCs",
+                      "Huge Nerd",
+                      ":)"
                     ]}
                     typeSpeed={50}
                     backDelay={1100}

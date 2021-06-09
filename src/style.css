@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: #fffb00;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -31,7 +31,7 @@ a:hover {
 }
 
 .color-a {
-  color: #0078ff;
+  color: #fbff00;
 }
 
 .color-d {
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #5f4900;
 }
 
 .overlay-mf {
@@ -171,7 +171,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #eeff00;
   width: 100px;
   bottom: -12px;
 }
@@ -948,7 +948,7 @@ BUTTON
   }
 
   .intro .intro-subtitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .intro-single .intro-title {

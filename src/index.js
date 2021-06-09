@@ -28,13 +28,13 @@ import Contact from './components/contact.jsx';
 import BackToTop from './components/back-top.jsx';
 import Preloader from './components/preloader';
 
-
+//<About />
 
 ReactDOM.render(
     <React.Fragment>
         <Navbar />
         <Intro />
-        <About />
+        
         <Portfolio />
         <Contact />
         <BackToTop />

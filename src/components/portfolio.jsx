@@ -8,6 +8,15 @@ import stock3 from "../img/image4.jpg";
 import stock4 from "../img/image5.jpg";
 import stock5 from "../img/image6.jpg";
 
+import pj_cyclehub from "../img/InstaStoryCaption.png";
+import pj_startracker from "../img/StarTracker.jpg";
+
+import pj_racing from "../img/RacingDashboard.jpg";
+
+let pj_extractor = "https://diyodemag.com/_images/5eccc700c672e05373af7274,1200,600";
+let pj_dashboard = "https://diyodemag.com/_images/5db2b862c672e0c34e24f691";
+
+
 class Portfolio extends React.Component {
   render() {
     return (
@@ -18,8 +27,7 @@ class Portfolio extends React.Component {
               <div className="title-box text-center">
                 <h3 className="title-a">Portfolio</h3>
                 <p className="subtitle-a">
-                  Incididunt nostrud id aute culpa excepteur pariatur consequat
-                  elit culpa nulla enim anim incididunt.
+                  Stuff I've worked on!
                 </p>
                 <div className="line-mf"></div>
               </div>
@@ -28,17 +36,17 @@ class Portfolio extends React.Component {
           <div className="row">
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-vmarine">
+                <a href={pj_cyclehub} data-lightbox="gallery-vmarine">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={pj_cyclehub} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">CYCLEHUB</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS
+                            Year 12 DNT Major Work
                           </span>
                         </div>
                       </div>
@@ -89,18 +97,17 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-aguadeluz">
+                <a href={pj_startracker} data-lightbox="gallery-aguadeluz">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={pj_startracker} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">DIYODE Star Tracker</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack SmoothScrolling
-                            VanillaJS
+                            DIYODE Project, Issue 44
                           </span>{" "}
                         </div>
                       </div>
@@ -151,17 +158,17 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-todo">
+                <a href={pj_dashboard} data-lightbox="gallery-todo">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={pj_dashboard} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">DIYODE Computer Dashboard</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack ReactJS
+                            DIYODE Project, Issue 28
                           </span>
                           {/*} / <span className="w-date">18 Sep. 2018</span>*/}
                         </div>
@@ -213,17 +220,17 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-medlingos">
+                <a href={pj_extractor} data-lightbox="gallery-medlingos">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={pj_extractor} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">DIYODE Fume Extractor</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            Bootstrap ReactJS GoogleAPI
+                            DIYODE Project, Issue 35
                           </span>
                         </div>
                       </div>
@@ -274,16 +281,16 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-smth">
+                <a href={pj_racing} data-lightbox="gallery-smth">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={pj_racing} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">DIYODE Racing Dashboard</h2>
                         <div className="w-more">
-                          <span className="w-ctegory">MERN</span>
+                          <span className="w-ctegory">DIYODE Project, Issue 42 and 43</span>
                         </div>
                       </div>
                       <div className="col-sm-4">

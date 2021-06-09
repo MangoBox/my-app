@@ -103,11 +103,12 @@ class Contact extends React.Component {
                       </div>
                       <div className="more-info">
                         <p className="lead">
-                          Whether you want to get in touch, talk about a project
-                          collaboration, or just say hi, I'd love to hear from
-                          you.
+                          Want to talk business? Or computers?
+                          Or building circuits? Or literally 
+                          anything else? I'm always super excited to chat.
                           <br />
-                          Simply fill the from and send me an email.
+                          <br></br>
+                          Fill out the form and shoot me an message!
                         </p>
                         {/* <!-- <ul class="list-ico">
                                 <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
@@ -124,7 +125,7 @@ class Contact extends React.Component {
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
+                                <i className="ion-social-instagram"></i>
                               </span>
                             </a>
                           </li>
@@ -139,6 +140,18 @@ class Contact extends React.Component {
                               </span>
                             </a>
                           </li>
+                          <li>
+                            <a
+                              href=""
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="ico-circle">
+                                <i className="ion-social-twitter"></i>
+                              </span>
+                            </a>
+                          </li>
+
                           <li>
                             <a
                               href=""
