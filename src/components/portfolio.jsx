@@ -1,20 +1,78 @@
 import React from "react";
+import Resizer from "react-image-file-resizer";
+import ReactFileReader from 'react-file-reader';
 
 //import stock
-import stock from "../img/image1.jpg";
-import stock1 from "../img/image2.jpg";
-import stock2 from "../img/image3.jpg";
-import stock3 from "../img/image4.jpg";
-import stock4 from "../img/image5.jpg";
-import stock5 from "../img/image6.jpg";
+import stock from "../img/projects/cyclehub/InstaStoryCaption.png";
+import stock1 from "../img/projects/cyclehub/InstaStoryCaption.png";
+import stock2 from "../img/projects/cyclehub/InstaStoryCaption.png";
+import stock3 from "../img/projects/cyclehub/InstaStoryCaption.png";
+import stock4 from "../img/projects/cyclehub/InstaStoryCaption.png";
+import stock5 from "../img/projects/cyclehub/InstaStoryCaption.png";
 
-import pj_cyclehub from "../img/InstaStoryCaption.png";
-import pj_startracker from "../img/StarTracker.jpg";
+import pj_cyclehub from "../img/projects/cyclehub/InstaStoryCaption.png";
+import pj_startracker from "../img/projects/starTracker/StarTracker.jpg";
 
-import pj_racing from "../img/RacingDashboard.jpg";
-
+import pj_racing from "../img/projects/racingDashboard/RacingDashboard.jpg";
+import worksList from "../setting/works.js";
 let pj_extractor = "https://diyodemag.com/_images/5eccc700c672e05373af7274,1200,600";
 let pj_dashboard = "https://diyodemag.com/_images/5db2b862c672e0c34e24f691";
+
+
+function createGalleryImages(workItem) {
+  let content = [];
+  for(var i = 0; i < workItem.images.length; i++) {
+    if(i != workItem.display) {
+      content.push (
+        <a
+          href={workItem.images[i].default}
+          data-lightbox={workItem.title}
+          style={{ display: "none" }}
+        >
+        jsx-a11y/anchor-has-content warning
+        </a>);
+    }
+  }
+  return content;
+}
+
+
+function createGalleryItems(works) {
+  let content = [];
+  for(var i = 0; i < works.length; i++) {
+    content.push(
+    <div className="col-md-4">
+      <div className="work-box">
+        <a href={works[i].images[works[i].display].default} data-lightbox={works[i].title}>
+          <div className="work-img">
+          
+          <img src={works[i].images[works[i].display].default} alt="" className="img-fluid" />
+          </div>
+          <div className="work-content">
+            <div className="row">
+              <div className="col-sm-8">
+                <h2 className="w-title">{works[i].title}</h2>
+                <div className="w-more">
+                  <span className="w-ctegory">
+                  {works[i].subtitle}
+                  </span>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="w-like">
+                  <span className="ion-ios-plus-outline"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        {createGalleryImages(worksList[i])}
+      </div>
+    </div>
+    );
+  }
+  return content;
+}
 
 
 class Portfolio extends React.Component {
@@ -34,373 +92,9 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={pj_cyclehub} data-lightbox="gallery-vmarine">
-                  <div className="work-img">
-                    <img src={pj_cyclehub} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">CYCLEHUB</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Year 12 DNT Major Work
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-vmarine"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={pj_startracker} data-lightbox="gallery-aguadeluz">
-                  <div className="work-img">
-                    <img src={pj_startracker} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">DIYODE Star Tracker</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            DIYODE Project, Issue 44
-                          </span>{" "}
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={pj_dashboard} data-lightbox="gallery-todo">
-                  <div className="work-img">
-                    <img src={pj_dashboard} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">DIYODE Computer Dashboard</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            DIYODE Project, Issue 28
-                          </span>
-                          {/*} / <span className="w-date">18 Sep. 2018</span>*/}
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={pj_extractor} data-lightbox="gallery-medlingos">
-                  <div className="work-img">
-                    <img src={pj_extractor} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">DIYODE Fume Extractor</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            DIYODE Project, Issue 35
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={pj_racing} data-lightbox="gallery-smth">
-                  <div className="work-img">
-                    <img src={pj_racing} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">DIYODE Racing Dashboard</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">DIYODE Project, Issue 42 and 43</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-          </div>
+          {createGalleryItems(worksList)}
         </div>
+      </div>
       </section>
     );
   }
