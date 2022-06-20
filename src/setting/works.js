@@ -143,6 +143,30 @@ const worksList = [
     title: 'Arduino with Pi - RP2040 Connect',
     subtitle: 'DIYODE Issue 48',
   },
+  {
+    images: importAll(require.context('../img/projects/cameraIntervalometer/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Camera Intervalometer',
+    subtitle: 'DIYODE Issue 50',
+  },
+  {
+    images: importAll(require.context('../img/projects/3in1projects/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Easy Arduino Sensor Kit Based Projects',
+    subtitle: 'DIYODE Issue 44',
+  },
+  {
+    images: importAll(require.context('../img/projects/legoLighting/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'DIY Lego Lighting',
+    subtitle: 'DIYODE Issue 44',
+  },
+  {
+    images: importAll(require.context('../img/projects/iotDisplay/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'DIY IoT Display',
+    subtitle: 'DIYODE Issue 41',
+  },
 ];
 
 
