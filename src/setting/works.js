@@ -71,6 +71,78 @@ const worksList = [
     title: 'Arduino IDE 2.0 Beta Review',
     subtitle: 'DIYODE Issue 45',
   },
+  {
+    images: importAll(require.context('../img/projects/pidControl/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'PID Control Project',
+    subtitle: 'DIYODE Issue 58',
+  },
+  {
+    images: importAll(require.context('../img/projects/waterBottleLauncher/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Water Bottle Rocket Launcher',
+    subtitle: 'DIYODE Issue 56',
+  },
+  {
+    images: importAll(require.context('../img/projects/audioMixer/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'DIY PC Audio Mixer',
+    subtitle: 'DIYODE Issue 56',
+  },
+  {
+    images: importAll(require.context('../img/projects/tinyProgramming/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: '\'Ultra\' Tiny Programming (ATTiny10)',
+    subtitle: 'DIYODE Issue 55',
+  },
+  {
+    images: importAll(require.context('../img/projects/connect4/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Gigantic Connect 4',
+    subtitle: 'DIYODE Issue 54',
+  },
+  {
+    images: importAll(require.context('../img/projects/wioTerminal/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Making with Wio Terminal',
+    subtitle: 'DIYODE Issue 54',
+  },
+  {
+    images: importAll(require.context('../img/projects/gpsTracker/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Raspberry Pi Powered GPS Tracker',
+    subtitle: 'DIYODE Issue 54',
+  },
+  {
+    images: importAll(require.context('../img/projects/gotoTelescope/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Hacking a Motorised Telescope',
+    subtitle: 'DIYODE Issue 52',
+  },
+  {
+    images: importAll(require.context('../img/projects/loadCells/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Under Pressure - Load Cells',
+    subtitle: 'DIYODE Issue 51',
+  },
+  {
+    images: importAll(require.context('../img/projects/dogTrainer/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'AI Powered Dog Trainer',
+    subtitle: 'DIYODE Issue 49 & 50',
+  },
+  {
+    images: importAll(require.context('../img/projects/rpiDashboard/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'DIY Raspberry Pi Car Dashboard',
+    subtitle: 'DIYODE Issue 49',
+  },
+  {
+    images: importAll(require.context('../img/projects/arduinoAndPi/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: 'Arduino with Pi - RP2040 Connect',
+    subtitle: 'DIYODE Issue 48',
+  },
 ];
 
 
