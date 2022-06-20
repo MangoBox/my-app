@@ -18,6 +18,12 @@ const worksList = [
     subtitle: 'DIYODE Issue 44',
   },
   {
+    images: importAll(require.context('../img/projects/tinyProgramming/', true, /\.(png|jpe?g|svg)$/)),
+    display: 0,
+    title: '\'Ultra\' Tiny Programming (ATTiny10)',
+    subtitle: 'DIYODE Issue 55',
+  },
+  {
     images: importAll(require.context('../img/projects/fumeExtractor/', true, /\.(png|jpe?g|svg)$/)),
     display: 0,
     title: 'Soldering Fume Extractor',
@@ -88,12 +94,6 @@ const worksList = [
     display: 0,
     title: 'DIY PC Audio Mixer',
     subtitle: 'DIYODE Issue 56',
-  },
-  {
-    images: importAll(require.context('../img/projects/tinyProgramming/', true, /\.(png|jpe?g|svg)$/)),
-    display: 0,
-    title: '\'Ultra\' Tiny Programming (ATTiny10)',
-    subtitle: 'DIYODE Issue 55',
   },
   {
     images: importAll(require.context('../img/projects/connect4/', true, /\.(png|jpe?g|svg)$/)),
